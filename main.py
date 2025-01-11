@@ -10,3 +10,4 @@ tal1 = float(input("skriv in tal 1: "))
 tal2 = float(input("Skrin in tal 2: "))
 summa = tal1 + tal2
 print("Summa av tal 1 och tal 2 är: ", summa )
+# No measure change
