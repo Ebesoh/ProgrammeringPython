@@ -38,7 +38,7 @@ print("Hypoterusen basera på inskrivna verdena är :",(round(Hypotenusan,2)))
 #3a
 # Ett program som talar dagens datum
 idag = datetime.date.today()
-print("Idag datumet är: ", idag)
+print("Idag datumet är:", idag)
 
 #3b
 sju_dagar_senare = idag + datetime.timedelta(days=7)
