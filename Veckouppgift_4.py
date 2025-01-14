@@ -40,5 +40,6 @@ print("Hypoterusen basera på inskrivna verdena är :",(round(Hypotenusan,2)))
 idag = datetime.date.today()
 print("Idag datumet är: ", idag)
 
+#3b
 sju_dagar_senare = idag + datetime.timedelta(days=7)
 print("Idag datumet är:", idag, "och datumet om 7 dagar senare är", sju_dagar_senare)
