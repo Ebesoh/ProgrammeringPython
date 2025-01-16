@@ -21,7 +21,7 @@ RestidTim = RestidMin // 60                                           # Beräkni
 RestidMin = RestidMin % 60                                            # Beräkning av antal minuter
 print("Du kör med hastighet", ForareHastighet, "km/h och det skall ta",RestidTim , "timmar och ", RestidMin,"minuter att köra från Stockholm till Göteborg")
 
-
+""" hello """
 #2
 ###Skriv ett program som räknar ut längden på hypotenusan i en rätvinklig triangel. Användaren behöver skriva in längden på de två kortare sidorna.##
 Motsatt_sida = float (input("Skriv in motsatt sidan längd av triangle: "))
