@@ -18,6 +18,7 @@ Tottenham_goals = 0
 Liverpool_goals = 0
 
 print("The match is over, now lets calculate the score! ")
+
 while True:
     try:
         Tottenham_goals = int ( input("How many goals did Tottenham score?: "))
