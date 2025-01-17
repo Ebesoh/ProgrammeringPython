@@ -27,8 +27,6 @@ print(" Input value must be '1' or '2'")
 while True:
     try:
          temp_measurement_scale = int (input(" Please input '1' for Celsius and '2' for Fahrenheit: "))
-         #if temp_measurement_scale != 1 :
-             #print(" Please input value '1' for C")
          if  temp_measurement_scale != 2 and temp_measurement_scale != 1:
              print(" Please input value '1' for Celsius or '2' for Fahrenheit")
              continue
