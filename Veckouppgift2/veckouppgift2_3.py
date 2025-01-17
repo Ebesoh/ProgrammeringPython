@@ -10,6 +10,7 @@
 # Version 3: nu ska programmet tala om hur många mål mer laget vann med. Exempel:
 # Tottenham vann med 1 mål!
 # Eftersom det finns tre möjliga utfall (lag 1 vinst, lag 2 vinst, oavgjort) behöver du minst tre testfall. Hitta på värden som du kan använda för att testa alla möjliga utfall.
+from logging import exception
 
 #*************************Programmet frågar användaren om antalet mål som respektive lag gjorde i en Champions League-match
 # och avgör sedan vilket lag som vann, om det blev oavgjort, eller med hur många mål ett lag vann med ***************************
@@ -21,8 +22,19 @@ print("The match is over, now lets calculate the score! ")
 
 while True:
     try:
-        Tottenham_goals = int ( input("How many goals did Tottenham score?: "))
-        Liverpool_goals = int ( input("How many goals did Liverpool score?: "))
+        Tottenham_goals = int( input("How many goals did Tottenham score?: "))
+        if Tottenham_goals < 0:
+            print("Scores must be a positive value!")
+            continue
+        break
+    except ValueError:
+        print("You can only input whole numbers scores, non whole numbers scores are not acceptable!")
+while True:
+    try:
+        Liverpool_goals = int(input("How many goals did Liverpool score?: "))
+        if Liverpool_goals < 0:
+            print("Scores must be a positive value!")
+            continue
         break
     except ValueError:
         print("You can only input whole numbers, non whole numbers are not acceptable!")
