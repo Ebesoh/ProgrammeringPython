@@ -34,7 +34,6 @@ while True:
     except ValueError:
         print("Only whole numbers are acceptable!")
 
-
 if temp_measurement_scale == 1:
         celsius_input_value = float (input("Please input temperature in Celsius: "))
         temp_in_fahrenheit = 1.8 * celsius_input_value + 32
