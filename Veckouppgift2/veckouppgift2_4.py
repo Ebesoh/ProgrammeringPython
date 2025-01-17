@@ -40,8 +40,8 @@ while True:
 if temp_measurement_scale == 1:
         celsius_input_value = float (input("Please input temperature in Celsius: "))
         temp_in_fahrenheit = 1.8 * celsius_input_value + 32
-        print("Temperature in Fahrenheit is ",str(temp_in_fahrenheit), " degree Fahrenheit" )
+        print("Temperature in Fahrenheit is ",(round (temp_in_fahrenheit,4)), " degree Fahrenheit" )
 elif temp_measurement_scale == 2:
         fahrenheit_input_value = float (input("Please input temperature in Fahrenheit: "))
         temp_in_celsius = (fahrenheit_input_value - 32) / 1.8
-        print("Temperature in Celsius is ", str(temp_in_celsius), "degree celsius")
+        print("Temperature in Celsius is ", (round(temp_in_celsius,4)), "degree celsius")
