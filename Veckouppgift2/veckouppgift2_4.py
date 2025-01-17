@@ -1,5 +1,6 @@
 #Skriv ett program som kan omvandla en temperatur i grader Celsius till grader Fahrenheit.
 #Version 1, exempel på output:
+from contextlib import nullcontext
 from string import printable
 
 from wheel.cli.convert import convert
@@ -27,7 +28,7 @@ print(" Input value must be '1' or '2'")
 while True:
     try:
          temp_measurement_scale = int (input(" Please input '1' for Celsius and '2' for Fahrenheit: "))
-         if  temp_measurement_scale != 2 and temp_measurement_scale != 1:
+         if  temp_measurement_scale != 2 and temp_measurement_scale != 1 and temp_measurement_scale == nullcontext:
              print(" Please input value '1' for Celsius or '2' for Fahrenheit")
              continue
          break
