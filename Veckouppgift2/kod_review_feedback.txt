@@ -1,1 +1,29 @@
 ****Code review feedback******************
+
+Lite feedback (Baserat på commit id 3ce3f58e4d37a8ed72aa537bb295bd066c071441):
+Koden kan summeras med: Ambitiöst =) bra jobbat.
+
+2_1:
+Du såg logikmisstaget med att man fick båda rabatterna och gjorde även en egen rättad version. Bra!
+
+2_2:
+Tydliga variabelnamn, koden gör det den ska. Man hade kunnat lägga till ett try block för att hantera felinmatning
+(dvs om någon skrivit in text), men det är valfritt. Står ju inget om det i uppgiften eller så... det är inte alltid jag
+orkat lägga till det heller =).
+Bra!
+
+2_3:
+Här gör du ordentlig inputvalidering, grymt!. Intkontroll på input, verifiering att inga negativa siffror matats in
+ (Det tror jag inte att jag gjorde)
+
+ 2_4:
+ Bra variabelnamn, hellre för långa än för korta.
+ Det finns import här från contextlib samt wheel som gör att man inte kan köra programmet. Filerna kanske legat i något
+ annat repo/struktur tidigare där dessa modulerna funnits?
+ Rad 27 säger "Input value mustbe 1 or 2". Jag gissar på att det är lite rester från när du gjorde programmet och labbat
+ lite. Takes one to know one som man säger =)
+ Ser bra ut i övrigt
+
+ Grymt jobbat!
+
+ / Nicklas
