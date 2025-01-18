@@ -24,7 +24,7 @@ temp_in_celsius = 0
 temp_in_fahrenheit = 0
 temp_measurement_scale = 0
 
-print(" Input value must be '1' or '2'")
+print(" Input value must be '1' or '2' to chose the temperature scale you want to convert.")
 while True:
     try:
          temp_measurement_scale = int (input(" Please input '1' for Celsius and '2' for Fahrenheit: "))
