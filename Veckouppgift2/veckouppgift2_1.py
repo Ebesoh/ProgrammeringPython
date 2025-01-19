@@ -38,7 +38,7 @@ discount = 0
 print("\n***** Rätt kod som uppfyller gränsvillkor uppfylla i kravet: 25% rabbat när price är >= level 2 och 10% rabbat när price är större än level 1 men mindre än level 3  ********\n")
 price = input("Välkommen, köp något dyrt: ")
 price = float(price)
-if level2 > price > level1:
+if level2 > price >= level1:
     print("Grattis! Du har avancerat till nivå 1 och får 10% rabatt.")
     discount = discount + 10
 if price >= level2:
