@@ -19,7 +19,7 @@
 
 #********************************** Programmet kontrollerar användarens längd för att bekräfta om de uppfyller längdkravet för att åka Balder på Liseberg *************
 height_requirement = 130
-user_height = float ( input("Please input your height: "))
+user_height = float ( input("Please input your height in cm: "))
 
 if user_height < 130:
     print( " Sorry you can't ride Balder, one must be",str(height_requirement), "cm tall to ride Balder")
