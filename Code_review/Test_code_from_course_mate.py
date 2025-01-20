@@ -1,15 +1,30 @@
-is_member = False
-level1 = 100
-level2 = 300
-discount = 0
+import math
 
-price = input("Väkommen, köp något dyrt: ")
-price = float(price)
-if level2> price > level1:
-    print("Nivå 1 och 10% rabatt.")
-    discount = discount + 10
-elif price >= level2:
-    print("Nivå 2 och 25% rabatt.")
-    discount = discount + 25
-final_price = price * (100 - discount)  / 100
-print("Efter rabatter blir pricet... " + str(final_price))
+r = math.comb(4,5)
+print(r)
+
+x= -2.5
+s= math.fabs(x)
+print(s)
+
+x =math.remainder(3,2)
+print(x)
+
+i = 0
+while i <= 5:
+    print(i)
+    i=i+1
+running = True
+while True:
+    print("Utskriften upprepas om och om igen")
+    val = input("Vill du köra programmet igen? Om ja, skriv ja om nej skriv nej: ")
+    if val=="nej":
+        break
+
+for i in range(100):
+    if i == 2:
+        continue
+    print(i)
+
+for item in ['a','b','c']:
+    print(item)

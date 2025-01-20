@@ -21,7 +21,7 @@
 height_requirement = 130
 user_height = float ( input("Please input your height in cm: "))
 
-if user_height < 130:
+if user_height < height_requirement:
     print( " Sorry you can't ride Balder, one must be",str(height_requirement), "cm tall to ride Balder")
-elif user_height >= 130:
+elif user_height >= height_requirement:
     print(" Congratulation!! with a height of ", str(user_height), " cm, you can ride Balder")
