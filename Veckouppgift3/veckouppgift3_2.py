@@ -1,32 +1,7 @@
-#veckauppgift3_1_2
-#2 Öva på loopar och listor
-#1a Skriv färdigt kodexemplet.
-#answer = 0
-#for i in ????????????:
-#    answer += i
-#print("Summan av talen 1 till 10 är: " + str(answer))
-# Svaret ska bli 55
-from Veckouppgift3.veckouppgift3_1 import index
+#veckouppgift3_2
 
-#1b Räkna ut summan av alla tal mellan 1 och 100. (inklusive 1 och 100, rätt svar ska bli 5050)
+from Code_review.Test_code_from_course_mate import number
 
-#1c Skriv om 1b så att den använder en while-loop.
-
-
-#2 Räkna ut summan av alla elementen i listan: [1, -2, 3, -2, 4, -3]
-
-
-#3 Träna på att skapa och manipulera listor. Alla uppgifter ska lösas med funktionerna som står i presentationen.
-#3a Skapa en lista med namnen på fyra filmer. Namnen ska vara strängar. Skriv ut hela listan 2med funktionen print.
-#3b Lägg till "Fellowship of the ring" sist i listan.
-#3c Lägg till "The two towers" på första platsen i listan. (index noll)
-#3d Ta reda på vilken position (index) "Fellowship of the ring" har nu.
-#3e Ta bort en annan av filmerna. Har Fellowship-filmen ändrat index?
-#3f Ta reda på hur lång listan är. (len)
-#3g Vänd listan baklänges.
-#3h Sortera listan stigande i bokstavsordning
-
-#veckauppgift3_2_1a
 print("\n********************Veckouppgift3_2_1a***********************")
 answer = 0
 for i in range(1,11):
@@ -50,3 +25,79 @@ while increment <= 100:
     summa = summa + increment
     increment +=1
 print("Summan av talen 1 till 100 är:" + str(summa))
+
+#veckauppgift3_2_2
+lista = [2,4,3,7,5,1,6,2]
+total = sum(lista)
+#print(lista.sort())
+#print(lista.reverse())
+print("Total sum of numbers from list",total)
+
+total = 0
+for num in lista:
+    total += num # total = total + num
+print("Total sum of numbers from list",total)
+
+#veckauppgift3_2_3
+print(lista[0])
+print(lista[1])
+print(lista[2])
+print(lista[3])
+print(lista[4])
+print(lista[5])
+print(lista[6])
+print(lista[7])
+print("Index 2", lista.index(2))
+print(len(lista))
+#lista.count(2)
+print("2 appears in lista ",lista.count(2), "times")
+print(lista)
+lista.reverse()
+print(lista)
+lista.append(2)
+print("Lista appended with 2", lista)
+lista.remove(2)
+print("2 removed from lista", lista)
+lista.reverse()
+print(lista)
+print(lista.__len__())
+lista.insert(9, 10)
+print(lista)
+lista.insert(0,0)
+print(lista)
+lista.insert(1,1)
+print(lista)
+lista.remove(2)
+print(lista)
+lista.pop(3)
+print(lista)
+
+#veckauppgift3_2_3a
+movies_name = ["God father 1", "The devils advocate","The Irishman","GoodFellas" ]
+print(movies_name)
+
+#veckauppgift3_2_3b
+movies_name.append("Fellowship of the ring")
+print(movies_name)
+
+#veckauppgift3_2_3c
+movies_name.insert(0,"The two towers")
+print(movies_name)
+
+#veckauppgift3_2_3d
+print("Index 'Fellowship of the ring' is:",movies_name.index("Fellowship of the ring"))
+
+#veckauppgift3_2_3e
+movies_name.remove("GoodFellas")
+print("Index 'Fellowship of the ring' is:",movies_name.index("Fellowship of the ring")) # Yes the index position changed from 5 to 4
+
+#veckauppgift3_2_3f
+print(movies_name.__len__())
+
+#veckauppgift3_2_3g
+movies_name.reverse()
+print(movies_name)
+
+#veckauppgift3_2_3h
+movies_name.sort()
+print(movies_name)
