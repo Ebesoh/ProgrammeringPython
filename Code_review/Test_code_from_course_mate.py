@@ -1,30 +1,20 @@
-import math
+def kvittokompis():
+    print("Välkommen till Kvittokompis! Avsluta genom att skriva: quit")
 
-r = math.comb(4,5)
-print(r)
+    total = 0
 
-x= -2.5
-s= math.fabs(x)
-print(s)
+    while True:
+        belopp = input("Skriv in ett belopp: ")
 
-x =math.remainder(3,2)
-print(x)
+        if belopp.lower() in ["quit", "avsluta"]:
+            break
 
-i = 0
-while i <= 5:
-    print(i)
-    i=i+1
-running = True
-while True:
-    print("Utskriften upprepas om och om igen")
-    val = input("Vill du köra programmet igen? Om ja, skriv ja om nej skriv nej: ")
-    if val=="nej":
-        break
+        try:
+            total += float(belopp)
+        except ValueError:
+            print("Ogiltigt belopp, försök igen.")
 
-for i in range(100):
-    if i == 2:
-        continue
-    print(i)
+    print(f"Det blir {total} kr totalt. Välkommen åter!")
 
-for item in ['a','b','c']:
-    print(item)
+
+kvittokompis()
