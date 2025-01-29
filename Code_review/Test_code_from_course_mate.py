@@ -1,20 +1,14 @@
-def kvittokompis():
-    print("Välkommen till Kvittokompis! Avsluta genom att skriva: quit")
+def find_min(numbers):
+    #counter = 0
+    if len(numbers) == 0:
+        print("The list is empty.")
+        return
+    counter = numbers[0]
+    for item in numbers:
+        if item < counter:
+            counter = item
+    print(f"the smallest item is:{counter}")
 
-    total = 0
-
-    while True:
-        belopp = input("Skriv in ett belopp: ")
-
-        if belopp.lower() in ["quit", "avsluta"]:
-            break
-
-        try:
-            total += float(belopp)
-        except ValueError:
-            print("Ogiltigt belopp, försök igen.")
-
-    print(f"Det blir {total} kr totalt. Välkommen åter!")
-
-
-kvittokompis()
+find_min([10,3-4,-11,])
+find_min([])
+find_min([100])
