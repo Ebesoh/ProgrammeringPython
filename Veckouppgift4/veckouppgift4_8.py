@@ -1,4 +1,5 @@
 #Veckouppgift4_8: pretty_print
+# Funktionen skriva ut innehållet i en lista lite snyggare
 def pretty_print(item_list):
     if not item_list:   # Kontrollera om listan är tom
         print("Listan är tom.")

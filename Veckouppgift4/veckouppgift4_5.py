@@ -1,4 +1,5 @@
 #Veckouppgift4_5: cut_edges
+#Funktionen tar bort första och sista element is listan och returnerar a ny lista
 def cut_edges (values):
     if not values:                #'if not values' kontrollerar om listan är tom. Om den är tom returneras ingenting
         return None
