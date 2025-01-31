@@ -21,9 +21,9 @@ def play_21():
 
     # Spelaren tar kort
     while True:
-        kort = input("Vill du ta ett nytt kort (ja/nej)? ").lower() # lower() method används för att säkerställa input är alltid small bokstav
-        if kort == "ja":
-            card = random.randint(1, 13)
+        ny_kort = input("Vill du ta ett nytt kort (ja/nej)? ").lower() # lower() method används för att säkerställa input är alltid small bokstav
+        if ny_kort == "ja":
+            kort = random.randint(1, 13)
             anvandare_total =anvandare_total + kort
             print(f"Du drog: {kort}, din total är nu: {anvandare_total}")
             if anvandare_total > 21:
