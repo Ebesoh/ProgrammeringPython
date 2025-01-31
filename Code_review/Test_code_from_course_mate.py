@@ -30,7 +30,8 @@ def play_21():
             break
 
     # Datorn tar kort
-    while computer_total < 17:  # Datorn stannar när den når 17 eller högre
+    while computer_total < 17:  # Datorn stannar när den når 17 eller högre, datorn simulerade motståndare
+    #while True:
         card = random.randint(1, 13)
         computer_total += card
         print(f"Datorn drog: {card}, datorns total är nu: {computer_total}")
